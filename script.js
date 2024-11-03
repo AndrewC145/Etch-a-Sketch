@@ -28,6 +28,7 @@ function startingGrid(size) {
   }
 }
 
+// Sets starting grid size
 startingGrid(16);
 
 
@@ -64,6 +65,7 @@ newGrid.addEventListener('click', () => {
 
 eraser.addEventListener('click', () => {
   const grids = document.querySelectorAll('.grid');
+  // Loops through each grid item to add an event listener (grid is a variable initialized in the loop)
   grids.forEach(grid => {
     grid.addEventListener('mouseover', () => {
       grid.style.backgroundColor = 'white';
