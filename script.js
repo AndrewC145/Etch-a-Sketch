@@ -2,6 +2,8 @@ const container = document.querySelector('.container');
 
 const newGrid = document.querySelector('.grid-num');
 
+const eraser = document.querySelector('.erase-btn');
+
 newGrid.addEventListener('click', () => {
   // Prompts the User how big they want the Grid to be when Clicked
   const gridValue = parseInt(prompt('How big do you want the grid to be? Must be between 1 and 100'));
@@ -33,6 +35,7 @@ newGrid.addEventListener('click', () => {
   }
 });
 
+
 // Defines a Starting Size of the Grid
 function startingGrid(size) {
   // Starting Values for the Grid
@@ -58,3 +61,12 @@ function startingGrid(size) {
 }
 
 startingGrid(16);
+
+eraser.addEventListener('click', () => {
+  const grids = document.querySelectorAll('.grid');
+  grids.forEach(grid => {
+    grid.addEventListener('mouseover', () => {
+      grid.style.backgroundColor = 'white';
+    });
+  });
+});

@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -21,12 +25,11 @@ body {
   border: 1px solid grey;
 }
 
-.title {
-  text-align: center;
+.btn-container {
+  display: flex;
+  gap: 1.5em;
 }
 
-.grid-num {
-  display: flex;
-  justify-content: center;
-  align-self: center;
+button {
+  padding: 0.5em 1em;
 }
