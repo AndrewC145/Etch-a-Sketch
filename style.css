@@ -1,3 +1,10 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
 
 .container {
   display: flex;
@@ -14,3 +21,12 @@
   border: 1px solid grey;
 }
 
+.title {
+  text-align: center;
+}
+
+.grid-num {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
